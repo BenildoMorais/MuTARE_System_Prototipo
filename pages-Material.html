@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Registro</title>
+  <title>Material</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -495,78 +495,131 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Registro de novo Funcionario</h1>
+      <h1>Material</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Pages</li>
-          <li class="breadcrumb-item active">Registro de novo Funcionario</li>
+          <li class="breadcrumb-item active">Material</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section faq">
       <div class="row">
-        
+      
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Multi Columns Form</h5>
+            <h5 class="card-title">Tabela de Materiais</h5>
 
-            <!-- Multi Columns Form -->
-            <form class="row g-3">
-              <div class="col-md-12">
-                <label for="inputName5" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="inputName5">
-              </div>
-              <div class="col-md-6">
-                <label for="inputEmail5" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail5">
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword5" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword5">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress5" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddres5s" placeholder="1234 Main St">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
-                </div>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="reset" class="btn btn-secondary">Reset</button>
-              </div>
-            </form><!-- End Multi Columns Form -->
+            <!-- Table with hoverable rows -->
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Empresa</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Data de Adição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Martelo</td>
+                  <td>Mutare</td>
+                  <td>500mt</td>
+                  <td>2016-05-25</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Cerrote</td>
+                  <td>MDZ</td>
+                  <td>300mt</td>
+                  <td>2014-12-05</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Fita Métrica</td>
+                  <td>Mutare</td>
+                  <td>400mt</td>
+                  <td>2011-08-12</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Escavadeira</td>
+                  <td>Mueda</td>
+                  <td>20000Mt</td>
+                  <td>2012-06-11</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- End Table with hoverable rows -->
 
           </div>
         </div>
 
       </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Criar novo do Material</h5>
+
+          <!-- General Form Elements -->
+          <form>
+            <div class="row mb-3">
+              <label for="inputText" class="col-sm-2 col-form-label">Nome</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputText" class="col-sm-2 col-form-label">Preço</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Descrição</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" style="height: 100px"></textarea>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputNumber" class="col-sm-2 col-form-label">Submeter Ficheiro</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="file" id="formFile">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label">Empresa de Destino</label>
+              <div class="col-sm-10">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecione a empresa</option>
+                  <option value="1">Mutare Soluções</option>
+                  <option value="2">MDZ</option>
+                  <option value="3">Mueda</option>
+                  <option value="4">RivasService</option>
+                  <option value="5">123 Capital SA</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit Form</button>
+              </div>
+            </div>
+
+          </form><!-- End General Form Elements -->
+
+        </div>
+      </div>
+
     </section>
 
   </main><!-- End #main -->
